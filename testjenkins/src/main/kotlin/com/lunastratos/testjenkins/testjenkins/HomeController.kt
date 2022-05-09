@@ -21,8 +21,6 @@ class HomeController @Autowired constructor(
 
         val result = "ok!"
         try {
-
-
             return ResponseEntity.ok<Any>(result.toString())
         }catch (e:Exception){
             return ResponseEntity.badRequest()
